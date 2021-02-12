@@ -21,7 +21,7 @@ class CreateWaktuReservasiTable extends Migration
 
             $table->foreign('id_layanan')->references('id_layanan')->on('layanan')->onDelete('cascade')->onUpdate('cascade');
 
-            $table->primary(['id_waktu' , 'id_layanan']);
+            $table->primary('id_waktu');
             $table->unique(['waktu_mulai' , 'id_layanan']);
             $table->unique(['waktu_selesai' , 'id_layanan']);
         });
