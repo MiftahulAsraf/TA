@@ -16,14 +16,14 @@ class adminSeeder extends Seeder
                 'id_users' => 'ADM1',
                 'username' => 'admin',
                 'nama_user' => 'admin',
-                'password' => 'admin',
+                'password' => bcrypt('admin'),
                 'id_role' => 1
             ],
             [
                 'id_users' => 'AMD2',
                 'username' => 'admin2',
                 'nama_user' => 'Admin 2',
-                'password' => 'admin',
+                'password' => bcrypt('admin'),
                 'id_role' => 1
             ]
         ];

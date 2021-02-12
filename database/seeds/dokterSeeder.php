@@ -16,14 +16,14 @@ class dokterSeeder extends Seeder
                 'id_users' => 'DKTR1',
                 'username' => 'dokter',
                 'nama_user' => 'Dokter',
-                'password' => 'dokter',
+                'password' => bcrypt('dokter'),
                 'id_role' => 2
             ],
             [
                 'id_users' => 'DKTR2',
                 'username' => 'dokter2',
                 'nama_user' => 'Dokter 2',
-                'password' => 'dokter',
+                'password' => bcrypt('dokter'),
                 'id_role' => 2
             ]
         ];
