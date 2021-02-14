@@ -12,8 +12,7 @@ class KonsultasiController extends Controller
     {
         $dokters  = User::where('id_role',2)->get();
         $user = User::select('users.*')->whereRaw("id_users in (select from_where from konsul where EXTRACT(MONTH FROM konsul.created_at) = '".date('m')."')")->where('id_role',3)->get();
-        // $pasiens = User::select('users.*')->join('konsul', 'konsul.from_where', '=', 'users.id_users')->where('id_role',3)->WhereMonth("created_at", date('m'))
-        ->orderBy('konsul.created_at','DESC')->distinct()->get();
+        // $pasiens = User::select('users.*')->join('konsul', 'konsul.from_where', '=', 'users.id_users')->where('id_role',3)->WhereMonth("created_at", date('m'))->orderBy('konsul.created_at','DESC')->distinct()->get();
         return view('konsultasi.index', compact('dokters','pasiens'));
     }
 
