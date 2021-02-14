@@ -17,7 +17,7 @@ class CreateTransaksiObatTable extends Migration
             $table->string('id_obat', 12);
             $table->string('id_pemeriksaan', 12);
             $table->integer('jumlah_obat');
-            $table->string('petunjuk', 50)->nullable();;
+            $table->string('petunjuk', 50);
 
             $table->foreign('id_obat')->references('id_obat')->on('obat')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('id_pemeriksaan')->references('id_pemeriksaan')->on('pemeriksaan')->onDelete('cascade')->onUpdate('cascade');

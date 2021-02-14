@@ -16,6 +16,8 @@ class CreateLayananTable extends Migration
         Schema::create('layanan', function (Blueprint $table) {
             $table->string('id_layanan', 12)->primary();
             $table->string('nama_layanan', 50);
+
+            
         });
     }
 

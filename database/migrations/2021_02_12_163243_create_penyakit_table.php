@@ -16,6 +16,8 @@ class CreatePenyakitTable extends Migration
         Schema::create('penyakit', function (Blueprint $table) {
             $table->string('id_penyakit', 12)->primary();
             $table->string('nama_penyakit', 50);
+
+            
         });
     }
 
