@@ -14,8 +14,9 @@ class Pasien extends Model
     protected $keyType = 'string';
 
     public $timestamps = false;
+    
     public function user()
     {
-        return $this->belongsTo('App\user', 'id_pasien', 'id_users');
+        return $this->belongsTo('App\User', 'id_pasien', 'id_users');
     }
 }

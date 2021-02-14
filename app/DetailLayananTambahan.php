@@ -15,6 +15,6 @@ class DetailLayananTambahan extends Model
 
     public function LayananTambahan()
     {
-        return $this->belongsTo('App\layanantambahan', 'id_layanan_tambahan', 'id_layanan_tambahan');
+        return $this->belongsTo('App\LayananTambahan', 'id_layanan_tambahan', 'id_layanan_tambahan');
     }
 }

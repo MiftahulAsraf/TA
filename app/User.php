@@ -42,7 +42,7 @@ class User extends Authenticatable
         return $this->belongsTo('App\Role', 'id_role', 'id');
     }
     public function pasien() {
-        return $this->hasOne('App\pasien', 'id_pasien', 'id_users');
+        return $this->hasOne('App\Pasien', 'id_pasien', 'id_users');
     }
 
     public function status(){

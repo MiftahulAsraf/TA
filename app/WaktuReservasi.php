@@ -17,6 +17,6 @@ class WaktuReservasi extends Model
     public $timestamps = false;
 
     public function layanan() {
-        return $this->belongsTo('App\layanan', 'id_layanan', 'id_layanan');
+        return $this->belongsTo('App\Layanan', 'id_layanan', 'id_layanan');
     }
 }

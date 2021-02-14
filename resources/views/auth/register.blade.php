@@ -37,7 +37,7 @@
                             <input name="id_users" type="text" class="form-control" placeholder="ID User" value="<?php echo "SEIRA".Rand(10,1000) ?>" readonly >
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputNamaBelakang1">ID User</label>
+                            <label for="exampleInputNamaBelakang1">No Rekam</label>
                             <input name="no_rekammedis" type="text" class="form-control" placeholder="No Rekam Medis" value="<?php echo "RKM".Rand(10,1000) ?>" readonly >
                         </div>
                         <div class="form-group">

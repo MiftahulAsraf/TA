@@ -25,6 +25,7 @@ class detailPenyakit extends Model
     {
         return $this->belongsTo('App\penyakit', 'id_penyakit', 'id_penyakit');
     }
+    
     protected function setKeysForSaveQuery(Builder $query)
     {
         $keys = $this->getKeyName();

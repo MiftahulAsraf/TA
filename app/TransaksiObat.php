@@ -15,7 +15,7 @@ class TransaksiObat extends Model
 
     public function Obat()
     {
-        return $this->belongsTo('App\obat', 'id_obat', 'id_obat');
+        return $this->belongsTo('App\Obat', 'id_obat', 'id_obat');
     }
     
 }

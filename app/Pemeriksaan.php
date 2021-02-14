@@ -21,10 +21,10 @@ class Pemeriksaan extends Model
     public $timestamps = false;
 
     public function pasien() {
-        return $this->belongsTo('App\pasien', 'id_pasien', 'id_pasien');
+        return $this->belongsTo('App\Pasien', 'id_pasien', 'id_pasien');
     }
     public function dokter() {
-        return $this->belongsTo('App\user', 'id_dokter', 'id_users');
+        return $this->belongsTo('App\User', 'id_dokter', 'id_users');
     }
     public function TransaksiObat()
     {
