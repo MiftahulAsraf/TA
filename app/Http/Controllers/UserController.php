@@ -20,6 +20,7 @@ class UserController extends Controller
         $user = User::find($id_users);
         return view('admin.edit',['user' => $user]);
     }
+    
     public function update(Request $request, $id_users)
     {
         $validation = $request->validate([

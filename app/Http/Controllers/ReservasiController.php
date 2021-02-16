@@ -184,7 +184,7 @@ class ReservasiController extends Controller
             $nohape['0']='2';
             $nohape = '6'.$nohape;
         }
-        if($reservasi->waktu_reservasi->layanan->nama_layanan == "Home Visit"){
+        if($reservasi->waktu_reservasi->layanan->nama_layanan == "Booking"){
             if($request->status == 2){
                 $message =  'Kepada '.$reservasi->pasien->user->nama_user.' Booking Telah Disetujui Pada Tanggal '.$reservasi->tanggal_reservasi.' Harap Tiba di Klinik 5 Menit Sebelum Jadwal Booking' ;
             }elseif($request->status == 4){

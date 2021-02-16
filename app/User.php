@@ -66,7 +66,6 @@ class User extends Authenticatable
 
     public function getfoto()
     {
-        
         $patlink = rtrim(app()->basePath('public/storage'), '/');
         if($this->foto && is_dir($patlink) && Storage::disk('public')->exists($this->foto)){
             return url("/storage/".$this->foto);
