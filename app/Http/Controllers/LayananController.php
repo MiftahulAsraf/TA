@@ -14,7 +14,8 @@ class LayananController extends Controller
     }
     public function create(Request  $request)
     {
-        $validation = $request->validate([
+        try {
+            $validation = $request->validate([
                 'nama_layanan' => 'required|min:5'
             ],
             [
@@ -26,6 +27,10 @@ class LayananController extends Controller
         $layanan->id_layanan = $request->id_layanan;
         $layanan->nama_layanan = $request->nama_layanan;
         $layanan->save();
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+
 
         return redirect('/reservasi')->with('sukses','Data Berhasil diinput');
     }
