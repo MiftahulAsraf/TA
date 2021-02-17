@@ -162,7 +162,7 @@
             var d = new Date();
             var currentHour = d.getHours();
             // console.log(currentHour);
-            // currentHour = 7;
+            currentHour = 12;
             if (currentHour > 10 && currentHour <= 21) {
                 if(!$('#chat-history').is(':visible')){
                     receiverId = $(this).data("id_dokter");
